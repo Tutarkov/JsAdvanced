@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animal Class Example</title>
+  </head>
+  <body>
+    <script src="./animals.js"></script>
+    <script>
+      const rabbit = new Animal('Rabbit', 'herbivore', 3, 10);
+      const lion = new Animal('Lion', 'carnivore', 1, 2);
+      const elephant = new Animal('Elephant', 'omnivore', 5, 20);
+
+      lion.eat(elephant);
+      rabbit.eat(lion);
+      elephant.eat(rabbit);
+      rabbit.eat('carrot');
+    </script>
+  </body>
+</html>
